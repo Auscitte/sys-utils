@@ -321,7 +321,7 @@ def print_usage(args):
 
 def main(args):
     if len(args) < 2:
-        print_usage()
+        print_usage(args)
         return
 
     upd = DbxUpdate(args[1], args[2] if len(args) > 2 else None)
